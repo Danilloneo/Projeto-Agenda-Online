@@ -117,3 +117,10 @@ table td img {
 #divMensagens{
     color: red;
 }
+
+footer {
+    padding: 10px;
+    margin-top: 10%;
+    text-align: center;
+    background-color: rgba(100,100,100,1);
+}
