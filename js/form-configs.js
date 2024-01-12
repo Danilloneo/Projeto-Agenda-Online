@@ -50,7 +50,7 @@ function criaColunaAcoes() {
     //Criando o botão excluir
     var botaoExcluir = document.createElement("span");
     botaoExcluir.classList.add("btn-excluir");
-    botaoExcluir.textContent = "excluir";
+    botaoExcluir.textContent = "Excluir";
 
     colunaAcoes.appendChild(botaoExcluir);
 
