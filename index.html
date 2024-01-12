@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Danillo Guimarães">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Agenda de Contatos Online</title>
+</head>
+<body>
+<div class="container">
+    <header>
+        <img src='./images/logoagenda.png' alt="Agenda Telefônica" title="logo agenda">
+        <h1>Crie sua Agenda Fácil<br>
+        Adicione, Exclua e Printe</h1>
+    </header>
+        <main>
+            <section>
+                <div class="caixa">
+                    <form id="frmContato">
+                        <div class="row">
+                            <div class="col-12 col-s-12" id="divMensagens">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 col-s-12">
+                                <label for="txtNome" class="rotulo"></label>
+                                <input type="text" id="txtNome" name="nome" placeholder="Nome Completo ✎"  maxlength="50" required>
+                            </div>
+                            <div class="col-4 col-s-6">
+                                <label for="txtEmail" class="rotulo"></label>
+                                <input type="email" id="txtTrabalho" name="trabalho" placeholder="E-mail ✉" step=".01">
+                            </div>
+                            <div class="col-4 col-s-6">
+                                <label for="txtTelefone" class="rotulo"></label>
+                                <input type="number" id="txtProva" name="prova" placeholder="Telefone ☏" step=".01">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-10 col-s-12"></div>
+                            <div class="col-2 col-s-12">
+                                <button id="btnSalvarContato" class="btn btn-info">Cadastrar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <div class="caixa">
+                <table id="tabela-contato">
+                    <thead>
+                        <tr>
+                            <th>Nome Completo</th>
+                            <th>Email</th>
+                            <th>Telefone</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="contato">
+                            <td class="td-nome">João Exemplo</td>
+                            <td class="td-email">exemplo@gmail.com</td>
+                            <td class="td-telefone">1399778906</td>
+                            <td class="td-acoes">
+                                <span class="btn-excluir">
+                                    excluir
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+</div>
+        <script src="./js/app-form.js" defer ></script>
+        <script src="./js/form-configs.js" defer ></script>
+        <script src="./js/excluir-item.js" defer ></script>
+    </body>
+</html>
